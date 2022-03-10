@@ -617,29 +617,29 @@ class ACCNodeWrapper extends EventEmitter {
     result.suspensionTravel = []
     for (let i = 0; i < 4; i++) { result.suspensionTravel.push(reader.ReadFloat()) }
 
-    const drs = reader.ReadFloat()
+    result.drs = reader.ReadFloat()
     result.tc = reader.ReadFloat()
     result.heading = reader.ReadFloat()
     result.pitch = reader.ReadFloat()
     result.roll = reader.ReadFloat()
-    const cgHeight = reader.ReadFloat()
+    result.cgHeight = reader.ReadFloat()
 
     result.carDamage = []
     for (let i = 0; i < 5; i++) { result.carDamage.push(reader.ReadFloat()) }
 
-    const numberOfTyresOut = reader.ReadUInt32()
+    result.numberOfTyresOut = reader.ReadUInt32()
     result.pitLimiterOn = reader.ReadUInt32() > 0
     result.abs = reader.ReadFloat()
-    const kersChange = reader.ReadFloat()
-    const kersInput = reader.ReadFloat()
+    result.kersChange = reader.ReadFloat()
+    result.kersInput = reader.ReadFloat()
     result.autoshifterOn = reader.ReadUInt32() > 0
 
     const rideHeight = []
     for (let i = 0; i < 2; i++) { rideHeight.push(reader.ReadFloat()) }
 
     result.turboBoost = reader.ReadFloat()
-    const ballast = reader.ReadFloat()
-    const airDensity = reader.ReadFloat()
+    result.ballast = reader.ReadFloat()
+    result.airDensity = reader.ReadFloat()
     result.airTemp = reader.ReadFloat()
     result.roadTemp = reader.ReadFloat()
 
@@ -647,15 +647,15 @@ class ACCNodeWrapper extends EventEmitter {
     for (let i = 0; i < 3; i++) { result.localAngularVel.push(reader.ReadFloat()) }
 
     result.finalFF = reader.ReadFloat()
-    const performanceMeter = reader.ReadFloat()
-    const engineBrake = reader.ReadUInt32()
-    const ersRecoveryLevel = reader.ReadUInt32()
-    const ersPowerLevel = reader.ReadUInt32()
-    const ersHeatCharging = reader.ReadUInt32()
-    const ersIsCharging = reader.ReadUInt32() > 0
+    result.performanceMeter = reader.ReadFloat()
+    result.engineBrake = reader.ReadUInt32()
+    result.ersRecoveryLevel = reader.ReadUInt32()
+    result.ersPowerLevel = reader.ReadUInt32()
+    result.ersHeatCharging = reader.ReadUInt32()
+    result.ersIsCharging = reader.ReadUInt32() > 0
     result.kersCurrentKJ = reader.ReadFloat()
-    const drsAvailable = reader.ReadUInt32() > 0
-    const drsEnabled = reader.ReadUInt32() > 0
+    result.drsAvailable = reader.ReadUInt32() > 0
+    result.drsEnabled = reader.ReadUInt32() > 0
 
     result.brakeTemp = []
     for (let i = 0; i < 4; i++) { result.brakeTemp.push(reader.ReadFloat()) }
@@ -702,9 +702,9 @@ class ACCNodeWrapper extends EventEmitter {
     result.localVelocity = []
     for (let i = 0; i < 3; i++) { result.localVelocity.push(reader.ReadFloat()) }
 
-    const P2PActivation = reader.ReadUInt32()
-    const P2PStatus = reader.ReadUInt32()
-    const currentMaxRpm = reader.ReadFloat()
+    result.P2PActivation = reader.ReadUInt32()
+    result.P2PStatus = reader.ReadUInt32()
+    result.currentMaxRpm = reader.ReadFloat()
 
     const mz = []
     for (let i = 0; i < 4; i++) { mz.push(reader.ReadFloat()) }
@@ -721,8 +721,8 @@ class ACCNodeWrapper extends EventEmitter {
     result.slipAngle = []
     for (let i = 0; i < 4; i++) { result.slipAngle.push(reader.ReadFloat()) }
 
-    const tcinAction = reader.ReadUInt32()
-    const absInAction = reader.ReadUInt32()
+    result.tcinAction = reader.ReadUInt32()
+    result.absInAction = reader.ReadUInt32()
 
     const suspensionDamage = []
     for (let i = 0; i < 4; i++) { suspensionDamage.push(reader.ReadFloat()) }
@@ -799,7 +799,7 @@ class ACCNodeWrapper extends EventEmitter {
     result.tyreCompound = []
     for (let i = 0; i < 34; i++) { result.tyreCompound.push(ReadChar(reader)) }
 
-    const replayTimeMultiplier = reader.ReadFloat()
+    result.replayTimeMultiplier = reader.ReadFloat()
     result.normalizedCarPosition = reader.ReadFloat()
     result.activeCars = reader.ReadUInt32()
 
@@ -927,8 +927,8 @@ class ACCNodeWrapper extends EventEmitter {
     for (let i = 0; i < 34; i++) { result.playerNick.push(ReadChar(reader)) }
 
     result.sectorCount = reader.ReadUInt32()
-    const maxTorque = reader.ReadFloat()
-    const maxPower = reader.ReadFloat()
+    result.maxTorque = reader.ReadFloat()
+    result.maxPower = reader.ReadFloat()
     result.maxRpm = reader.ReadUInt32()
     result.maxFuel = reader.ReadFloat()
 
@@ -938,9 +938,9 @@ class ACCNodeWrapper extends EventEmitter {
     const tyreRadius = []
     for (let i = 0; i < 4; i++) { tyreRadius.push(reader.ReadFloat()) }
 
-    const maxTurboBoost = reader.ReadFloat()
-    const deprecated_1 = reader.ReadFloat()
-    const deprecated_2 = reader.ReadFloat()
+    result.maxTurboBoost = reader.ReadFloat()
+    result.deprecated_1 = reader.ReadFloat()
+    result.deprecated_2 = reader.ReadFloat()
     result.penaltiesEnabled = reader.ReadUInt32() > 0
     result.aidFuelRate = reader.ReadFloat()
     result.aidTireRate = reader.ReadFloat()
@@ -949,25 +949,25 @@ class ACCNodeWrapper extends EventEmitter {
     result.aidStability = reader.ReadFloat() > 0
     result.aidAutoclutch = reader.ReadUInt32() > 0
     result.aidAutoBlip = reader.ReadUInt32() > 0
-    const hasDRS = reader.ReadUInt32() > 0
-    const hasERS = reader.ReadUInt32() > 0
-    const hasKERS = reader.ReadUInt32() > 0
-    const kersMaxJ = reader.ReadFloat()
-    const engineBrakeSettingsCount = reader.ReadUInt32()
-    const ersPowerControllerCount = reader.ReadUInt32()
-    const trackSplineLength = reader.ReadFloat()
+    result.hasDRS = reader.ReadUInt32() > 0
+    result.hasERS = reader.ReadUInt32() > 0
+    result.hasKERS = reader.ReadUInt32() > 0
+    result.kersMaxJ = reader.ReadFloat()
+    result.engineBrakeSettingsCount = reader.ReadUInt32()
+    result.ersPowerControllerCount = reader.ReadUInt32()
+    result.trackSplineLength = reader.ReadFloat()
 
     const trackConfiguration = []
     for (let i = 0; i < 34; i++) { trackConfiguration.push(ReadChar(reader)) }
 
-    const ersMaxJ = reader.ReadFloat()
-    const isTimedRace = reader.ReadUInt32() > 0
-    const hasExtraLap = reader.ReadUInt32() > 0
+    result.ersMaxJ = reader.ReadFloat()
+    result.isTimedRace = reader.ReadUInt32() > 0
+    result.hasExtraLap = reader.ReadUInt32() > 0
 
     const carSkin = []
     for (let i = 0; i < 34; i++) { carSkin.push(ReadChar(reader)) }
 
-    const reversedGridPositions = reader.ReadUInt32()
+    result.reversedGridPositions = reader.ReadUInt32()
     result.PitWindowStart = reader.ReadUInt32()
     result.PitWindowEnd = reader.ReadInt32()
     result.isOnline = reader.ReadUInt32() > 0
