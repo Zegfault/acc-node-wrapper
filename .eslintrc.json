@@ -1,0 +1,12 @@
+{
+  "extends": [
+    "standard"
+  ],
+  "plugins": [],
+  "rules": {},
+  "globals": {
+    "unitTest": "writable",
+    "it": "readonly",
+    "describe": "readonly"
+  }
+}

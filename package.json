@@ -21,10 +21,24 @@
     "url": "https://github.com/FynniX/acc-node-wrapper/issues"
   },
   "homepage": "https://github.com/FynniX/acc-node-wrapper#readme",
+  "devDependencies": {
+    "eslint": "^7.3.1",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^4.0.4",
+    "eslint-plugin-standard": "^4.0.1",
+    "eslint-plugin-vue": "^6.2.2"
+  },
   "dependencies": {
     "@fynnix/node-easy-ipc": "^1.0.8",
     "binutils": "^0.1.0",
     "moment": "^2.29.1",
-    "utf8-bytes": "^0.0.1"
+    "utf8-bytes": "^0.0.1",
+    "lodash": "^4.17.15"
   }
 }

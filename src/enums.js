@@ -1,258 +1,289 @@
 class DriverCategory {
-    "3" = "Platinum"
-    "2" = "Gold"
-    "1" = "Silver"
-    "0" = "Bronze"
-    "255" = "Error"
+  constructor () {
+    this['3'] = 'Platinum'
+    this['3'] = 'Platinum'
+    this['2'] = 'Gold'
+    this['1'] = 'Silver'
+    this['0'] = 'Bronze'
+    this['255'] = 'Error'
+  }
 }
 
 class CupCategory {
-    "0" = "Overall/Pro"
-    "1" = "ProAm"
-    "2" = "Am"
-    "3" = "Silver"
-    "4" = "National"
+  constructor () {
+    this['0'] = 'Overall/Pro'
+    this['1'] = 'ProAm'
+    this['2'] = 'Am'
+    this['3'] = 'Silver'
+    this['4'] = 'National'
+  }
 }
 
 class LapType {
-    "0" = "Error"
-    "1" = "Outlap"
-    "2" = "Regular"
-    "3" = "Inlap"
+  constructor () {
+    this['0'] = 'Error'
+    this['1'] = 'Outlap'
+    this['2'] = 'Regular'
+    this['3'] = 'Inlap'
+  }
 }
 
 class CarLocationEnum {
-    0 = "None"
-    1 = "Track"
-    2 = "Pitlane"
-    3 = "PitEntry"
-    4 = "PitExit"
+  constructor () {
+    this[0] = 'None'
+    this[1] = 'Track'
+    this[2] = 'Pitlane'
+    this[3] = 'PitEntry'
+    this[4] = 'PitExit'
+  }
 }
 
 class SessionPhase {
-    "0" = "None"
-    "1" = "Starting"
-    "2" = "PreFormation"
-    "3" = "FormationLap"
-    "4" = "PreSession"
-    "5" = "Session"
-    "6" = "SessionOver"
-    "7" = "PostSession"
-    "8" = "ResultUI"
+  constructor () {
+    this['0'] = 'None'
+    this['1'] = 'Starting'
+    this['2'] = 'PreFormation'
+    this['3'] = 'FormationLap'
+    this['4'] = 'PreSession'
+    this['5'] = 'Session'
+    this['6'] = 'SessionOver'
+    this['7'] = 'PostSession'
+    this['8'] = 'ResultUI'
+  }
 }
 
 class RaceSessionType {
-    "0" = "Practice"
-    "4" = "Qualifying"
-    "9" = "Superpole"
-    "10" = "Race"
-    "11" = "Hotlap"
-    "12" = "Hotstint"
-    "13" = "HotlapSuperpole"
-    "14" = "Replay"
+  constructor () {
+    this['0'] = 'Practice'
+    this['4'] = 'Qualifying'
+    this['9'] = 'Superpole'
+    this['10'] = 'Race'
+    this['11'] = 'Hotlap'
+    this['12'] = 'Hotstint'
+    this['13'] = 'HotlapSuperpole'
+    this['14'] = 'Replay'
+  }
 }
 
 class BroadcastingCarEventType {
-    "0" = "None"
-    "1" = "GreenFlag"
-    "2" = "SessionOver"
-    "3" = "PenaltyCommMsg"
-    "4" = "Accident"
-    "5" = "LapCompleted"
-    "6" = "BestSessionLap"
-    "7" = "BestPersonalLap"
+  constructor () {
+    this['0'] = 'None'
+    this['1'] = 'GreenFlag'
+    this['2'] = 'SessionOver'
+    this['3'] = 'PenaltyCommMsg'
+    this['4'] = 'Accident'
+    this['5'] = 'LapCompleted'
+    this['6'] = 'BestSessionLap'
+    this['7'] = 'BestPersonalLap'
+  }
 }
 
 class NationalityEnum {
-    "0" = "Any"
-    "1" = "Italy"
-    "2" = "Germany"
-    "3" = "France"
-    "4" = "Spain"
-    "5" = "GreatBritain"
-    "6" = "Hungary"
-    "7" = "Belgium"
-    "8" = "Switzerland"
-    "9" = "Austria"
-    "10" = "Russia"
-    "11" = "Thailand"
-    "12" = "Netherlands"
-    "13" = "Poland"
-    "14" = "Argentina"
-    "15" = "Monaco"
-    "16" = "Ireland"
-    "17" = "Brazil"
-    "18" = "SouthAfrica"
-    "19" = "PuertoRico"
-    "20" = "Slovakia"
-    "21" = "Oman"
-    "22" = "Greece"
-    "23" = "SaudiArabia"
-    "24" = "Norway"
-    "25" = "Turkey"
-    "26" = "SouthKorea"
-    "27" = "Lebanon"
-    "28" = "Armenia"
-    "29" = "Mexico"
-    "30" = "Sweden"
-    "31" = "Finland"
-    "32" = "Denmark"
-    "33" = "Croatia"
-    "34" = "Canada"
-    "35" = "China"
-    "36" = "Portugal"
-    "37" = "Singapore"
-    "38" = "Indonesia"
-    "39" = "USA"
-    "40" = "NewZealand"
-    "41" = "Australia"
-    "42" = "SanMarino"
-    "43" = "UAE"
-    "44" = "Luxembourg"
-    "45" = "Kuwait"
-    "46" = "HongKong"
-    "47" = "Colombia"
-    "48" = "Japan"
-    "49" = "Andorra"
-    "50" = "Azerbaijan"
-    "51" = "Bulgaria"
-    "52" = "Cuba"
-    "53" = "CzechRepublic"
-    "54" = "Estonia"
-    "55" = "Georgia"
-    "56" = "India"
-    "57" = "Israel"
-    "58" = "Jamaica"
-    "59" = "Latvia"
-    "60" = "Lithuania"
-    "61" = "Macau"
-    "62" = "Malaysia"
-    "63" = "Nepal"
-    "64" = "NewCaledonia"
-    "65" = "Nigeria"
-    "66" = "NorthernIreland"
-    "67" = "PapuaNewGuinea"
-    "68" = "Philippines"
-    "69" = "Qatar"
-    "70" = "Romania"
-    "71" = "Scotland"
-    "72" = "Serbia"
-    "73" = "Slovenia"
-    "74" = "Taiwan"
-    "75" = "Ukraine"
-    "76" = "Venezuela"
-    "77" = "Wales"
-    "78" = "Iran"
-    "79" = "Bahrain"
-    "80" = "Zimbabwe"
-    "81" = "ChineseTaipei"
-    "82" = "Chile"
-    "83" = "Uruguay"
-    "84" = "Madagascar"
+  constructor () {
+    this['0'] = 'Any'
+    this['1'] = 'Italy'
+    this['2'] = 'Germany'
+    this['3'] = 'France'
+    this['4'] = 'Spain'
+    this['5'] = 'GreatBritain'
+    this['6'] = 'Hungary'
+    this['7'] = 'Belgium'
+    this['8'] = 'Switzerland'
+    this['9'] = 'Austria'
+    this['10'] = 'Russia'
+    this['11'] = 'Thailand'
+    this['12'] = 'Netherlands'
+    this['13'] = 'Poland'
+    this['14'] = 'Argentina'
+    this['15'] = 'Monaco'
+    this['16'] = 'Ireland'
+    this['17'] = 'Brazil'
+    this['18'] = 'SouthAfrica'
+    this['19'] = 'PuertoRico'
+    this['20'] = 'Slovakia'
+    this['21'] = 'Oman'
+    this['22'] = 'Greece'
+    this['23'] = 'SaudiArabia'
+    this['24'] = 'Norway'
+    this['25'] = 'Turkey'
+    this['26'] = 'SouthKorea'
+    this['27'] = 'Lebanon'
+    this['28'] = 'Armenia'
+    this['29'] = 'Mexico'
+    this['30'] = 'Sweden'
+    this['31'] = 'Finland'
+    this['32'] = 'Denmark'
+    this['33'] = 'Croatia'
+    this['34'] = 'Canada'
+    this['35'] = 'China'
+    this['36'] = 'Portugal'
+    this['37'] = 'Singapore'
+    this['38'] = 'Indonesia'
+    this['39'] = 'USA'
+    this['40'] = 'NewZealand'
+    this['41'] = 'Australia'
+    this['42'] = 'SanMarino'
+    this['43'] = 'UAE'
+    this['44'] = 'Luxembourg'
+    this['45'] = 'Kuwait'
+    this['46'] = 'HongKong'
+    this['47'] = 'Colombia'
+    this['48'] = 'Japan'
+    this['49'] = 'Andorra'
+    this['50'] = 'Azerbaijan'
+    this['51'] = 'Bulgaria'
+    this['52'] = 'Cuba'
+    this['53'] = 'CzechRepublic'
+    this['54'] = 'Estonia'
+    this['55'] = 'Georgia'
+    this['56'] = 'India'
+    this['57'] = 'Israel'
+    this['58'] = 'Jamaica'
+    this['59'] = 'Latvia'
+    this['60'] = 'Lithuania'
+    this['61'] = 'Macau'
+    this['62'] = 'Malaysia'
+    this['63'] = 'Nepal'
+    this['64'] = 'NewCaledonia'
+    this['65'] = 'Nigeria'
+    this['66'] = 'NorthernIreland'
+    this['67'] = 'PapuaNewGuinea'
+    this['68'] = 'Philippines'
+    this['69'] = 'Qatar'
+    this['70'] = 'Romania'
+    this['71'] = 'Scotland'
+    this['72'] = 'Serbia'
+    this['73'] = 'Slovenia'
+    this['74'] = 'Taiwan'
+    this['75'] = 'Ukraine'
+    this['76'] = 'Venezuela'
+    this['77'] = 'Wales'
+    this['78'] = 'Iran'
+    this['79'] = 'Bahrain'
+    this['80'] = 'Zimbabwe'
+    this['81'] = 'ChineseTaipei'
+    this['82'] = 'Chile'
+    this['83'] = 'Uruguay'
+    this['84'] = 'Madagascar'
+  }
 }
 
 class ACC_STATUS {
-    "0" = "AC_OFF"
-    "1" = "AC_REPLAY"
-    "2" = "AC_LIVE"
-    "3" = "AC_PAUSE"
+  constructor () {
+    this['0'] = 'AC_OFF'
+    this['1'] = 'AC_REPLAY'
+    this['2'] = 'AC_LIVE'
+    this['3'] = 'AC_PAUSE'
+  }
 }
 
 class ACC_SESSION_TYPE {
-    "-1" = "AC_UNKNOWN"
-    "0" = "AC_PRACTICE"
-    "1" = "AC_QUALIFY"
-    "2" = "AC_RACE"
-    "3" = "AC_HOTLAP"
-    "4" = "AC_TIME_ATTACK"
-    "5" = "AC_DRIFT"
-    "6" = "AC_DRAG"
-    "7" = "AC_HOTSTINT"
-    "8" = "AC_HOTLAPSUPERPOLE"
+  constructor () {
+    this['-1'] = 'AC_UNKNOWN'
+    this['0'] = 'AC_PRACTICE'
+    this['1'] = 'AC_QUALIFY'
+    this['2'] = 'AC_RACE'
+    this['3'] = 'AC_HOTLAP'
+    this['4'] = 'AC_TIME_ATTACK'
+    this['5'] = 'AC_DRIFT'
+    this['6'] = 'AC_DRAG'
+    this['7'] = 'AC_HOTSTINT'
+    this['8'] = 'AC_HOTLAPSUPERPOLE'
+  }
 }
 
 class ACC_FLAG_TYPE {
-    "0" = "AC_NO_FLAG"
-    "1" = "AC_BLUE_FLAG"
-    "2" = "AC_YELLOW_FLAG"
-    "3" = "AC_BLACK_FLAG"
-    "4" = "AC_WHITE_FLAG"
-    "5" = "AC_CHECKERED_FLAG"
-    "6" = "AC_PENALTY_FLAG"
-    "7" = "ACC_GREEN_FLAG"
-    "8" = "ACC_ORANGE_FLAG"
+  constructor () {
+    this['0'] = 'AC_NO_FLAG'
+    this['1'] = 'AC_BLUE_FLAG'
+    this['2'] = 'AC_YELLOW_FLAG'
+    this['3'] = 'AC_BLACK_FLAG'
+    this['4'] = 'AC_WHITE_FLAG'
+    this['5'] = 'AC_CHECKERED_FLAG'
+    this['6'] = 'AC_PENALTY_FLAG'
+    this['7'] = 'ACC_GREEN_FLAG'
+    this['8'] = 'ACC_ORANGE_FLAG'
+  }
 }
 
 class ACC_PENALTY_TYPE {
-    "0" = "None"
-    "1" = "DriveThrough_Cutting"
-    "2" = "StopAndGo_10_Cutting"
-    "3" = "StopAndGo_20_Cutting"
-    "4" = "StopAndGo_30_Cutting"
-    "5" = "Disqualified_Cutting"
-    "6" = "RemoveBestLaptime_Cutting"
+  constructor () {
+    this['0'] = 'None'
+    this['1'] = 'DriveThrough_Cutting'
+    this['2'] = 'StopAndGo_10_Cutting'
+    this['3'] = 'StopAndGo_20_Cutting'
+    this['4'] = 'StopAndGo_30_Cutting'
+    this['5'] = 'Disqualified_Cutting'
+    this['6'] = 'RemoveBestLaptime_Cutting'
 
-    "7" = "DriveThrough_PitSpeeding"
-    "8" = "StopAndGo_10_PitSpeeding"
-    "9" = "StopAndGo_20_PitSpeeding"
-    "10" = "StopAndGo_30_PitSpeeding"
-    "11" = "Disqualified_PitSpeeding"
-    "12" = "RemoveBestLaptime_PitSpeeding"
+    this['7'] = 'DriveThrough_PitSpeeding'
+    this['8'] = 'StopAndGo_10_PitSpeeding'
+    this['9'] = 'StopAndGo_20_PitSpeeding'
+    this['10'] = 'StopAndGo_30_PitSpeeding'
+    this['11'] = 'Disqualified_PitSpeeding'
+    this['12'] = 'RemoveBestLaptime_PitSpeeding'
 
-    "13" = "Disqualified_IgnoredMandatoryPit"
+    this['13'] = 'Disqualified_IgnoredMandatoryPit'
 
-    "14" = "PostRaceTime"
-    "15" = "Disqualified_Trolling"
-    "16" = "Disqualified_PitEntry"
-    "17" = "Disqualified_PitExit"
-    "18" = "Disqualified_WrongWay"
+    this['14'] = 'PostRaceTime'
+    this['15'] = 'Disqualified_Trolling'
+    this['16'] = 'Disqualified_PitEntry'
+    this['17'] = 'Disqualified_PitExit'
+    this['18'] = 'Disqualified_WrongWay'
 
-    "19" = "DriveThrough_IgnoredDriverStint"
-    "20" = "Disqualified_IgnoredDriverStint"
+    this['19'] = 'DriveThrough_IgnoredDriverStint'
+    this['20'] = 'Disqualified_IgnoredDriverStint'
 
-    "21" = "Disqualified_ExceededDriverStintLimit"
+    this['21'] = 'Disqualified_ExceededDriverStintLimit'
+  }
 }
 
 class ACC_TRACK_GRIP_STATUS {
-    "0" = "ACC_GREEN"
-    "1" = "ACC_FAST"
-    "2" = "ACC_OPTIMUM"
-    "3" = "ACC_GREASY"
-    "4" = "ACC_DAMP"
-    "5" = "ACC_WET"
-    "6" = "ACC_FLOODED"
+  constructor () {
+    this['0'] = 'ACC_GREEN'
+    this['1'] = 'ACC_FAST'
+    this['2'] = 'ACC_OPTIMUM'
+    this['3'] = 'ACC_GREASY'
+    this['4'] = 'ACC_DAMP'
+    this['5'] = 'ACC_WET'
+    this['6'] = 'ACC_FLOODED'
+  }
 }
 
 class ACC_RAIN_INTENSITY {
-    "0" = "ACC_NO_RAIN"
-    "1" = "ACC_DRIZZLE"
-    "2" = "ACC_LIGHT_RAIN"
-    "3" = "ACC_MEDIUM_RAIN"
-    "4" = "ACC_HEAVY_RAIN"
-    "5" = "ACC_THUNDERSTORM"
+  constructor () {
+    this['0'] = 'ACC_NO_RAIN'
+    this['1'] = 'ACC_DRIZZLE'
+    this['2'] = 'ACC_LIGHT_RAIN'
+    this['3'] = 'ACC_MEDIUM_RAIN'
+    this['4'] = 'ACC_HEAVY_RAIN'
+    this['5'] = 'ACC_THUNDERSTORM'
+  }
 }
 
 class ACC_WHEELS_TYPE {
-    "0" = "ACC_FrontLeft"
-    "1" = "ACC_FrontRight"
-    "2" = "ACC_RearLeft"
-    "3" = "ACC_RearRight"
+  constructor () {
+    this['0'] = 'ACC_FrontLeft'
+    this['1'] = 'ACC_FrontRight'
+    this['2'] = 'ACC_RearLeft'
+    this['3'] = 'ACC_RearRight'
+  }
 }
 
 module.exports = {
-    DriverCategory,
-    CupCategory,
-    LapType,
-    CarLocationEnum,
-    SessionPhase,
-    RaceSessionType,
-    BroadcastingCarEventType,
-    NationalityEnum,
-    ACC_STATUS,
-    ACC_SESSION_TYPE,
-    ACC_FLAG_TYPE,
-    ACC_PENALTY_TYPE,
-    ACC_TRACK_GRIP_STATUS,
-    ACC_RAIN_INTENSITY,
-    ACC_WHEELS_TYPE
+  DriverCategory,
+  CupCategory,
+  LapType,
+  CarLocationEnum,
+  SessionPhase,
+  RaceSessionType,
+  BroadcastingCarEventType,
+  NationalityEnum,
+  ACC_STATUS,
+  ACC_SESSION_TYPE,
+  ACC_FLAG_TYPE,
+  ACC_PENALTY_TYPE,
+  ACC_TRACK_GRIP_STATUS,
+  ACC_RAIN_INTENSITY,
+  ACC_WHEELS_TYPE
 }
